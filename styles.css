@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "RobotoRegular";
+  src:
+    url(fonts/roboto-regular.ttf);
+}
+@font-face {
+  font-family: "RobotoLight";
+  src:
+    url(fonts/roboto-light.ttf);
+}
+
+.header {
+  font-family: "RobotoRegular";
+  color: #ff5eb7;
+  font-size: 125px
+}
+
+.bg-image {
+  background-image: url("assets/background.gif");
+
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+
+  height: 100%;
+
+  background-position: center;
+  background-repeat: repeat;
+  transform: scale(1.1);
+}
