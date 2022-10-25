@@ -1,14 +1,3 @@
-@font-face {
-  font-family: "RobotoRegular";
-  src:
-    url(fonts/roboto-regular.ttf);
-}
-@font-face {
-  font-family: "RobotoLight";
-  src:
-    url(fonts/roboto-light.ttf);
-}
-
 .header {
   font-family: "RobotoRegular";
   color: #ff5eb7;
