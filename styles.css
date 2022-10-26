@@ -1,3 +1,115 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.discord-profile {
+  height: 675px;
+  width: 400px;
+  background-color: #0D0D0D;
+  border-radius: 20px;
+
+  position: fixed;
+  top: 50px;
+  left: 50px;
+}
+.banner-color {
+  background-color: #e278b8;
+  height: 70px;
+  width: 400px;
+
+  border-radius: 20px 20px 0px 0px
+}
+.about-background {
+  height: 475px;
+  width: 361px;
+  background-color: #211319;
+  border-radius: 20px;
+
+  position: fixed;
+  top: 227px;
+  left: 69px;
+}
+.avatar {
+  width: 120px;
+  height: 120px;
+
+  position: fixed;
+  top: 90px;
+  left: 65px;
+}
+.discord-name {
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 25px;
+
+  position: fixed;
+  left: 195px;
+  top: 132px;
+
+  color: #FFFFFF;
+}
+.pronouns {
+  font-family: 'Open Sans';
+  font-size: 17px;
+
+  position: fixed;
+  left: 195px;
+  top: 160px;
+
+  color: #FFFFFF
+}
+.status {
+  font-family: 'Open Sans';
+  font-size: 15px;
+
+  text-align: center;
+
+  position: relative;
+  top: 18px;
+
+  color: #FFFFFF;
+}
+.h1 {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  font-size: 15px;
+
+  text-align: Center;
+
+  position: relative;
+
+  color: #FFFFFF
+}
+.about {
+  font-family: 'Open Sans';
+  font-size: 15px;
+
+  text-align: Left;
+
+  position: fixed;
+  left: 83px;
+  top: 330px;
+
+  color: #FFFFFF
+}
+.line {
+  background-color: #FFFFFF;
+}
+.button {
+  background-color: #211319;
+  color: #FFFFFF;
+  text-align: right;
+  font-size: 16px;
+  font-family: 'Open Sans';
+  padding: 5px 53px;
+  border-radius: 3px;
+
+  position: relative;
+  top: 415px;
+  left: 27px;
+}
+
 .bg-image::after {
   content: "";
   position: absolute;
@@ -6,13 +118,12 @@
   backdrop-filter: blur(5px);
   pointer-events: none;
 }
-
 .bg-image {
   position: static;
   height: 100%;
   width: 100%;
 
-  background: no-repeat center center;
+  background: center;
   background-image: url(assets/background.gif);
   background-size: cover;
 }
