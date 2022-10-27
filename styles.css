@@ -11,6 +11,18 @@ body, html {
   position: fixed;
   top: 75px;
   left: 164px;
+
+  animation: moving 1.5s;
+
+
+  @keyframes moving {
+    0% {
+      left: 0px;
+    }
+    100% {
+      left: 164px;
+    }
+  }
 }
 .banner-color {
   background-color: #e278b8;
