@@ -1,49 +1,232 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>UwU</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+:root {
+  /* FONTS */
+  --PrimaryFont: 'Open Sans';
+  --SecondaryFont: 'Montserrat';
 
-        <!-- CSS file Links -->
-        <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="css/animations.css">
+  /* COLORS */
+  --PrimaryBackgroundColor: #0D0D0D;
+  --SecondaryBackgroundColor: #211319;
+  
+  --PrimaryTextColor: #FFFFFF;
+  --SecondaryTextColor: #FA69C0;
 
-        <!-- Google Font Links -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans">
-    </head>
-    <body>
-        <div class="bg-image"></div>
+  --ButtonHoverColor: #C689C6;
+  --ButtonDefaultColor: #211319;
 
-        <div class="discord-profile">
-            <div class="banner-color"></div>
-            <img src="assets/avatar.png" class="avatar">
-            <div class="discord-name">LunaXCBN<span style=color:#999999>#1598</span></div>
-            <div class="pronouns">She/her</div>
-            <div class="badges-background">
-              <img src="assets/finnish.png" class="finnish-flag">
-              <div class="line" style="width:1px;height:15px;position:absolute;top:8px;left:37px;background-color:#555"></div>
-              <img src="assets/trans.png" class="trans-flag">
-            </div>
-            <div class="about-background">
-                <div class="status">"I said I don't like change but I'm not afraid.<br>I can't keep it together ever anyway."</div>
-                <div class="line" style="width:345px;height:1px;position:absolute;top:291px;left:7px;background-color:#333"></div>
-                <div class="line" style="width:345px;height:1px;position:absolute;top:103px;left:7px;background-color:#333"></div>
-                <h1 class="h1" style="top:28px">ABOUT ME</h1>
-                <h1 class="h1" style="top:185px">CONNECTIONS</h1>
-                <p class="about">
-                    ✦ 18<br>
-                    ✦ Media Student<br>
-                    ✦ Dog 5 digit in osu!m<br>
-                    ✦ Jack of a bunch of trades<br>
-                    ✦ Racist (finnish)<br>
-                    ✦ 50% human, 50% G.O.A.T and 100% retard
-                </p>
-            </div>
-            <button onclick="window.open('https://github.com/LunaXCBN')" class="button" style="background-image:url(assets/github.png);background-size:25px;background-repeat:no-repeat;background-position-x:5px;background-position-y:3px">GitHub</button>
-            <button onclick="window.open('https://twitter.com/SleeepyLuna')" class="button" style="left:40px;background-image:url(assets/twitter.png);background-size:30px;background-repeat:no-repeat;background-position-x: 1px;background-position-y: 2px">Twitter</button>
-            <button onclick="window.open('https://discord.gg/jcevymcSh6')" class="button" style="width:162px;top:425px;background-image:url(assets/discord.png);background-size:25px;background-repeat:no-repeat;background-position-x:5px;background-position-y:3px">Discord</button>
-            <button onclick="window.open('http://steamcommunity.com/profiles/76561199273774208')" class="button" style="left:40px;top:425px;width:162px;background-image:url(assets/steam.png);background-size:25px;background-repeat:no-repeat;background-position-x:5px;background-position-y:3px">Steam</button>
-        </div>
-    </body>
-</html>
+  --BadgesBackgroundColor: #233233;
+  --BannerColor: #E278B8;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: #000;
+}
+
+.bg-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  background-image: url(assets/background.gif);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin: -5px -10px -10px -5px;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+
+}
+.content {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#portfolio {
+  height: 925px;
+  width: 1250px;
+  background-color: var(--PrimaryBackgroundColor);
+  border-radius: 20px;
+  z-index: 10;
+
+  position: fixed;
+  top: 120px;
+  left: 700px;
+}
+.portfolio-gamebanana {
+  position: absolute;
+
+  font-family: var(--SecondaryFont);
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--PrimaryTextColor);
+}
+
+#discord-profile {
+  height: 675px;
+  width: 400px;
+  background-color: var(--PrimaryBackgroundColor);
+  border-radius: 20px;
+  z-index: 10;
+
+  position: fixed;
+  top: 120px;
+  left: 164px;
+}
+.banner-color {
+  background-color: var(--BannerColor);
+  height: 70px;
+  width: 400px;
+
+  border-radius: 20px 20px 0px 0px
+}
+.about-background {
+  height: 475px;
+  width: 361px;
+  background-color: var(--SecondaryBackgroundColor);
+  border-radius: 20px;
+
+  position: absolute;
+  top: 180px;
+  left: 19px;
+}
+.avatar {
+  width: 120px;
+  height: 120px;
+
+  position: absolute;
+  top: 33px;
+  left: 15px;
+
+  border-radius: 100%;
+  box-shadow: 0px 0px 20px #fff;
+}
+.discord-name {
+  font-family: var(--SecondaryFont);
+  font-weight: 800;
+  font-size: 25px;
+
+  color: var(--PrimaryTextColor);
+
+  position: absolute;
+  left: 145px;
+  top: 78px;
+}
+.pronouns {
+  font-family: var(--PrimaryFont);
+  font-size: 17px;
+
+  background: -webkit-linear-gradient(45deg, #fa69c0, #e87bbc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: 0px 0px 5px #e87bbc;
+
+  position: absolute;
+  left: 145px;
+  top: 105px;
+}
+.status {
+  font-family: var(--PrimaryFont);
+  font-size: 15px;
+
+  text-align: center;
+
+  position: relative;
+  top: 18px;
+
+  color: var(--PrimaryTextColor);
+  -webkit-color: #000;
+}
+.badges-background {
+  background-color: var(--BadgesBackgroundColor);
+  border-radius: 10px;
+
+  width: 75px;
+  height: 30px;
+
+  position: absolute;
+  top: 133px;
+  left: 143px;
+}
+.finnish-flag {
+  height: 20px;
+  width: 20px;
+
+  position: absolute;
+  top: 4.5px;
+  left: 9px;
+}
+.trans-flag {
+  height: 20px;
+  width: 20px;
+
+  position: absolute;
+  top: 4.5px;
+  left: 45px;
+}
+.h1 {
+  font-family: var(--SecondaryFont);
+  font-weight: 800;
+  font-size: 15px;
+
+  text-align: Center;
+
+  position: relative;
+
+  color: #FFFFFF
+}
+.about {
+  font-family: var(--PrimaryFont);
+  font-size: 15px;
+
+  text-align: Left;
+
+  position: absolute;
+  left: 13px;
+  top: 100px;
+
+  color: var(--PrimaryTextColor);
+}
+.line {
+  background-color: #FFFFFF;
+}
+
+.button {
+  background-color: var(--ButtonDefaultColor);
+  color: var(--PrimaryTextColor);
+  border: 2px solid #444;
+  text-align: right;
+  font-size: 16px;
+  font-family: 'Open Sans';
+  padding: 5px 53px;
+  border-radius: 3px;
+
+  transition-duration: 0.3s;
+
+  position: relative;
+  top: 415px;
+  left: 27px;
+}
+.button:hover {
+  background-color: var(--ButtonHoverColor);
+}
+
+.taskbar-background {
+  width: 100%;
+  height: 40px;
+
+  position: fixed;
+  bottom: 0px;
+
+  background-color: #555;
+}
