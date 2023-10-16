@@ -20,6 +20,7 @@ body, html {
   background-color: #060606;
   height: 100vh;
   margin: 0;
+  font-family: var(--PrimaryFont);
 }
 
 .bg-image {
@@ -44,22 +45,30 @@ body, html {
   margin-left: 20vw;
   margin-right: 20vw;
 }
+#flask-py-version {
+  position: absolute;
+  top: 95%;
+  left: 0.2vw;
+  opacity: 25%;
+  font-size: 1.2vh;
+}
 
 #profile {
   height: 27vh;
-  width: 65vw;
+  width: 55vw;
   background-color: #233233;
-  z-index: 9999;
+  z-index: 1;
 
   position: fixed;
   top: 3.5vh;
-  left: 17.5vw; /* Perfectly centered in every resolution */
+  left: 22.5vw; /* Perfectly centered in every resolution */
 }
 #pfp {
   width: 14vh;
   height: 14vh;
 
   content:url("/static/assets/pfp.png");
+  cursor: pointer;
 
   position: absolute;
   top: 3.4vh;
@@ -75,7 +84,18 @@ body, html {
   left: 1.5vw;
 }
 
-.container.aboutme {
+#aboutme {
+  height: 64.6vh;
+  width: 34.3vw;
+  background-color: #233233;
+  z-index: 1;
+
+  position: fixed;
+  top: 32vh;
+  left: 22.5vw;
+}
+
+.container.profile {
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
@@ -84,7 +104,6 @@ body, html {
   left: 9.5vw;
   top: 4vh;
 }
-
 #age {
   order: 0;
   color: #FFF;
@@ -113,135 +132,32 @@ body, html {
   text-align: left;
 }
 
-.about-background {
-  height: 475px;
-  width: 361px;
-  background-color: var(--SecondaryBackgroundColor);
-  border-radius: 20px;
-
-  position: absolute;
-  top: 180px;
-  left: 19px;
-}
-.discord-name {
-  font-family: var(--SecondaryFont);
-  font-weight: 800;
-  font-size: 25px;
-
-  color: var(--PrimaryTextColor);
-
-  position: absolute;
-  left: 145px;
-  top: 78px;
-}
-.pronouns {
-  font-family: var(--PrimaryFont);
-  font-size: 17px;
-
-  background: -webkit-linear-gradient(45deg, #fa69c0, #e87bbc);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  text-shadow: 0px 0px 5px #e87bbc;
-
-  position: absolute;
-  left: 145px;
-  top: 105px;
-}
-.status {
-  font-family: var(--PrimaryFont);
-  font-size: 15px;
-
-  text-align: center;
-
-  position: relative;
-  top: 18px;
-
-  color: var(--PrimaryTextColor);
-  -webkit-color: #000;
-}
-.badges-background {
-  background-color: var(--BadgesBackgroundColor);
-  border-radius: 10px;
-
-  width: 75px;
-  height: 30px;
-
-  position: absolute;
-  top: 133px;
-  left: 143px;
-}
-.finnish-flag {
-  height: 20px;
-  width: 20px;
-
-  position: absolute;
-  top: 4.5px;
-  left: 9px;
-}
-.trans-flag {
-  height: 20px;
-  width: 20px;
-
-  position: absolute;
-  top: 4.5px;
-  left: 45px;
-}
-.h1 {
-  font-family: var(--SecondaryFont);
-  font-weight: 800;
-  font-size: 15px;
-
-  text-align: Center;
-
-  position: relative;
-
-  color: #FFFFFF
-}
-.about {
-  font-family: var(--PrimaryFont);
-  font-size: 15px;
-
-  text-align: Left;
-
-  position: absolute;
-  left: 13px;
-  top: 100px;
-
-  color: var(--PrimaryTextColor);
-}
-.line {
-  background-color: #FFFFFF;
-}
-
-.button {
-  background-color: var(--ButtonDefaultColor);
-  color: var(--PrimaryTextColor);
-  border: 2px solid #444;
-  text-align: right;
-  font-size: 16px;
-  font-family: 'Open Sans';
-  padding: 5px 53px;
-  border-radius: 3px;
-
-  transition-duration: 0.3s;
-
-  position: relative;
-  top: 415px;
-  left: 27px;
-}
-.button:hover {
-  background-color: var(--ButtonHoverColor);
-}
-
-#site-contents {
-  height: 95vh;
-  width: 50vw;
-  background-color: var(--PrimaryBackgroundColor);
-  z-index: 9999;
+#lastfm {
+  height: 11vh;
+  width: 20vw;
+  background-color: #233233;
+  z-index: 1;
 
   position: fixed;
-  top: 2.5vh;
-  left: 37vw;
+  top: 32vh;
+  left: 57.5vw;
+}
+#cover {
+  height: 8.9vh;
+  width: 8.9vh;
+  position: absolute;
+  top: 1.2vh;
+  left: 0.3vw;
+}
+#song {
+  font-size: 2vh;
+  position: absolute;
+  top: 3.6vh;
+  left: 5.2vw;
+}
+#artist {
+  font-size: 1.7vh;
+  position: absolute;
+  top: 1.4vh;
+  left: 5.2vw;
 }

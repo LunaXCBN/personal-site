@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>UwU</title>
+        <title>⛤ Luna's Observatory</title>
         <link rel="icon" type="image/x-icon" href="/static/assets/favicon.png">
 
         <!-- CSS file Links -->
         <link rel="stylesheet" href="/static/css/fonts.css">
         <link rel="stylesheet" href="/static/css/main.css">
-        
     </head>
     <body>
         <div class="bg-image" style="transform:scale(1.03)"></div>
 
         <div class="content">
             <div id="profile">
-                <div id="pfp" style="border: 2.5px solid {{ status_color }}"></div>
+                <a href="https://github.com/LunaXCBN/lunaXCBN.github.io" target="_blank" style="color:#FFF"><span id="flask-py-version">Flask {{ flask_version }} | Python {{ python_version }}</span></a>
+                <a href="https://steamcommunity.com/profiles/76561198148554560/" target="_blank"><div id="pfp" style="border: 2.5px solid {{ status_color }}"></div></a>
                 <span id="status" style="color: {{ status_color }}">{{ status }}</span>
-                <div class="container aboutme">
+                <div class="container profile">
                     <span id="age">{{ bday }} years old</span>
                     <span id="name">LunaXCBN</span>
                     <span id="title">Amateur Programmer</span>
                 </div>
             </div>
+            <div id="aboutme">
+
+            </div>
+            <div id="lastfm">
+                <img id="cover" src="{{ cover }}">
+                <span id="song">{{ song }}</span>
+                <span id="artist">{{ artist }}</span>
+            </div>
         </div>
+
+        <script src="/static/js/adjustPosition.js"></script>
     </body>
 </html>
