@@ -7,4 +7,4 @@
 | Retro Effects | Not done |
 | Last 5 songs | Not done |
 | Socials | Not done |
-| Steam online status | Not done |
+| Steam online status | Done |
