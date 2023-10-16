@@ -1,6 +1,5 @@
 """Websites main file."""
 from flask import Flask, render_template
-from flask_socketio import SocketIO
 from dotenv import load_dotenv
 import platform
 import datetime
@@ -13,8 +12,6 @@ load_dotenv()
 app = Flask(__name__,
             template_folder="templates",  # Static template folder
             static_folder="static")  # Static file folder
-socketio = SocketIO(app)
-thread = None
 
 
 @app.route("/")
