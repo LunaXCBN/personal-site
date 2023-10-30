@@ -3,7 +3,7 @@
 | Feature | Status |
 |---------|---------|
 | Portfolio | Not done |
-| About Me | Not done |
+| About Me | Done |
 | Retro Effects | Not done |
 | Lastfm integration | Done |
 | Socials | Not done |
