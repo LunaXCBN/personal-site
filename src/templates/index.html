@@ -13,7 +13,7 @@
 
         <div class="content">
             <div id="profile">
-                <a href="https://github.com/LunaXCBN/lunaXCBN.github.io" target="_blank" style="color:#FFF"><span id="flask-py-version">Flask {{ flask_version }} | Python {{ python_version }}</span></a>
+                <a href="https://github.com/LunaXCBN/lunaXCBN.github.io" target="_blank" rel="noopener noreferrer" style="color:#FFF"><span id="flask-py-version">Flask {{ flask_version }} | Python {{ python_version }}</span></a>
                 <a href="https://steamcommunity.com/profiles/76561198148554560/" target="_blank"><div id="pfp" style="border: 2.5px solid {{ status_color }}"></div></a>
                 <span id="status" style="color: {{ status_color }}">{{ status }}</span>
                 <div class="container profile">
@@ -23,7 +23,18 @@
                 </div>
             </div>
             <div id="aboutme">
-
+                <div class="aboutme-text header">About Me</div>
+                <div class="line" style="width:100%;top:8%;opacity:25%"></div>
+                <p class="aboutme-text contents">
+                I'm a {{ bday }} year old beginner programmer from Finland. Currently focusing on Python, but looking to branch out to things like Rust in the future.
+                <br>
+                <br>
+                I haven't been programming for very long, 1.5 years at best, but I'm keen on learning. Pop punk lover and competitive FPS enjoyer since 2014.
+                <br>
+                <br>
+                <a href="https://github.com/LunaXCBN/" target="_blank" rel="noopener noreferrer">GitHub</a><br>
+                <a href="https://steamcommunity.com/id/LunaXCBN/" target="_blank" rel="noopener noreferrer">Steam Profile</a>
+                </p>
             </div>
             <div id="lastfm">
                 <img id="cover" src="{{ cover }}">

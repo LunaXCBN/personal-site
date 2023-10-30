@@ -44,6 +44,9 @@ def index():
         except KeyError:
             currently_playing = "None"
 
+        status = 0
+        status_color = 0
+
         # Dictionaries for different personastate codes.
         status_dict = {0: "Offline",
                        1: "Online",
@@ -81,7 +84,7 @@ def index():
         response = requests.get(url, headers=headers)
 
         json_data = json.loads(response.text)
-        
+
         artist = json_data["recenttracks"]["track"][0]["artist"]["#text"]
         song = json_data["recenttracks"]["track"][0]["name"]
         cover = json_data["recenttracks"]["track"][0]["image"][3]["#text"]
@@ -102,6 +105,7 @@ def index():
                            artist=artist,
                            song=song,
                            cover=cover)
+
 
 # Start the website
 if __name__ == "__main__":

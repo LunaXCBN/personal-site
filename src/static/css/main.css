@@ -22,6 +22,14 @@ body, html {
   margin: 0;
   font-family: var(--PrimaryFont);
 }
+a {
+  text-decoration: none;
+  color: #991FB6
+}
+a:hover {
+  text-decoration: none;
+  color: #C654E2
+}
 
 .bg-image {
   position: fixed;
@@ -34,7 +42,7 @@ body, html {
   width: 100%;
   height: 100%;
   margin: -5px -10px -10px -5px;
-  opacity: 2%;
+  opacity: 5%;
 }
 
 .content {
@@ -94,15 +102,33 @@ body, html {
   top: 32vh;
   left: 22.5vw;
 }
+.aboutme-text.header {
+  font-size: 3.5vh;
+  font-family: var(--PrimaryFont);
+  color: #FFF;
+
+  position: absolute;
+  top: 7px;
+  left: 7px;
+}
+.aboutme-text.contents {
+  font-size: 1.8vh;
+  font-family: var(--PrimaryFont);
+  color: #FFF;
+
+  position: absolute;
+  top: 45px;
+  left: 7px;
+}
 
 .container.profile {
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
 
-  position: absolute;
-  left: 9.5vw;
-  top: 4vh;
+  position: fixed;
+  left: 33vw;
+  top: 7vh;
 }
 #age {
   order: 0;
@@ -160,4 +186,11 @@ body, html {
   position: absolute;
   top: 1.4vh;
   left: 5.2vw;
+}
+
+.line {
+  height: 1px;
+  background-color: #FFF;
+
+  position: absolute;
 }
