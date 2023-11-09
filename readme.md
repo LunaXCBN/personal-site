@@ -9,3 +9,4 @@
 | Socials | Not done |
 | Steam online status | Done |
 | Art of OCs | Not done |
+| Last updated github repository | Not done |
